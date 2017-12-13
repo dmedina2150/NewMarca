@@ -91,7 +91,7 @@ get_template_part( 'template/parts/header/suscription', 'page' );
 					data-target="1" data-value="Cachorro" style="color:#900e9c; font-family: caviar_dreamsregular;font-size: 18px;background-color: #fff; border : 1px solid #fff""><b>Cachorro</b></button>
 				</div>				
 			</div>
-
+       
 						
 	</section>
 	
