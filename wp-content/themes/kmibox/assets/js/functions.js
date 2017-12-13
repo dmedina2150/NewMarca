@@ -172,7 +172,7 @@ function loadFase(fase_id){
 								$('[data-fase="3"]')
 								.addClass('text-center')
 								.append(
-									$('<article class="text-center col-sm-4 separation-top hidden-md hidden-lg"></article>')
+									$('<article class=" text-center col-xs-6 col-sm-4 separation-top hidden-md hidden-lg hidden-sm"></article>')
 									.append( 
 									$('<img/>')
 									.addClass('img-responsive')
@@ -209,7 +209,7 @@ function loadFase(fase_id){
 						$('<span>') 
 						.append( 
 								$('<br>'),
-								$('<span class="text-center col-sm-12 separation-top fontspan">')
+								$('<span class="text-center col-sm-12 col-xs-12 separation-top fontspan">')
 								.text('Descuento en comparación con el precio unitario mensual*')
 						
 						))

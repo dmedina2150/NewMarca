@@ -20,7 +20,7 @@ foreach ($suscripciones as $key => $value) {
 	<div style="float:left;width:70%;">    
 		<div class="col-md-4 col-xs-12 col-md-offset-2"
 			style="margin-top:20px;">
-			<h3>Selecciona una suscripción</h3>
+			<h3 style="color: #000000">Selecciona una suscripción</h3>
 			<select class="form-control" data-id="select_kmibox" data-target="content-suscripcion">
 				<option>Selecciona una Marca</option>
 				<?php foreach ($suscripciones as $key => $kmibox) { ?>
@@ -46,7 +46,7 @@ foreach ($suscripciones as $key => $value) {
 	<div style="float:left;width:100%;">    
 		<div class="col-md-4 col-xs-12 col-md-offset-2"
 			style="margin-top:20px;">
-			<h3>Selecciona una suscripción</h3>
+			<h3 style="color:#94d400">Selecciona una suscripción</h3>
 			<select class="form-control" data-id="select_kmibox" data-target="content-suscripcion">
 				<option>Selecciona una Marca</option>
 				<?php foreach ($suscripciones as $key => $kmibox) { ?>
@@ -74,31 +74,32 @@ foreach ($suscripciones as $key => $value) {
 
 		
 		<div class="row text-center">
-			<div class="col-md-4">
+			<div class="col-md-4 col-xs-6">
 				<label>Tipo de suscripción</label>
 			      <input readonly id="tipo_suscripcion" class="profile-content-input form-control"  value="">
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 col-xs-6">
 				<label>Tipo de ALimento</label>
 				<input readonly id="tipo_kmibox" class="profile-content-input form-control"  value="">
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 col-xs-6">
 				<label>Próxima entrega</label>
 				<input readonly id="proxima_entrega" class="profile-content-input form-control"  value="">				
 			</div>
-		</div>
-		<div class="row text-center">
-			<div class="col-md-6">
+			<div class="col-md-6 col-xs-6">
 				<label>Estatus:</label>
 				<input readonly id="estatus" class="profile-content-input form-control"  value="">
 			</div>
-			<div class="col-md-6">
+		</div>
+		<div class="row text-center">
+			
+			<div class="col-md-6 col-xs-12">
 				<label>Artículos añadidos:</label>
 				<select id="articulos" class="profile-content-input form-control"></select>
 			</div>
 		</div>
 		<div class="row text-center">
-			<label>Entregas</label>
+			<label style="color: #94d400">Entregas</label>
 			<div class="calendar">
 				<ul class="list-inline list-unstyle" id="leyenda">
 					<li><span></span><label>Enero</label></li> 
