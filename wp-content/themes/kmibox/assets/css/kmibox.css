@@ -14,7 +14,9 @@ h2{
 	/*padding: 15px 0px 15px 0px; */
 }
 
-
+hr{
+	color:#000000;
+}
 
 h3{
 	color:#ffffff;
@@ -237,6 +239,14 @@ select{
 	font-weight: bold;
 }
 
+#carrousel-mobile div: last-child{
+position: absolute;
+    border: 1px solid #000;
+    width: 100%;
+    text-align: center;
+    margin-top: 37%;
+
+}
 .desc_value{
 	color:white;
 	background: #ccc;
@@ -355,12 +365,11 @@ select{
 #carrousel1,
 #carrousel {
     width:800px;
-    height: 300px;
+    height: 400px;
     display: relative;
     position:relative;
 	clear:both;
 	margin:0 auto;
-	margin-top: 100px;
   }
   #carrousel1,
   #carrousel img {
@@ -1077,7 +1086,9 @@ select{
 	}
 	.btn-kmibox-white {
 	    font-size: 10px;
-	    padding: 5px 10px;
+	    padding: 10px 20px;
+	    margin-top: 20px;
+	    margin-left: 20px;
 	}
 	#header-purchase-title {
 	    position: absolute;
@@ -1086,11 +1097,21 @@ select{
 	    padding-right: 5px;
 	    padding-left: 5px;
 	}
+	#header {
+	    padding-bottom: 40px;
+	    margin-left: 20px;
+	    text-align: right;
+	    color: #ffffff;
+	    font-size: 18px;
+	    font-family: caviar_dreamsregular;
+	    margin-top: 20px
+}
 	#title img {
     	width: 16%;
 	}
 	#header-purchase{
 	    height: 12vh;
+	    width: 600px;
 	}
 	#content-extra {
     	height: auto;
@@ -1244,8 +1265,9 @@ select{
 	}
 	#top div,
 	#banner{
-		text-align: center; 
+		/*text-align: center; */
 		margin-top: 2vh;
+		margin-bottom: 8vh;
 	}
 	#banner-text {
     	text-align: center;
