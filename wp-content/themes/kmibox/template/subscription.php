@@ -40,73 +40,66 @@ get_template_part( 'template/parts/header/suscription', 'page' );
 					<img src='<?php echo get_home_url(); ?>/img/Cachorro.png'  class="img-responsive" width="300px"/>.			
 				</div>
 			</div>
-	<section>
+	</section>
 
 		
-	</section>
-			<div class="hidden-xs">
-				<br>  
-								<div style="float:left;width:35%;">    
-					<label style="margin-left: 35px;font-weight: bold;font-family: PoetsenOne_Regular; font-size:30px; color:#900e9c;"><B>Selecciona la edad:</B></label>
-				</div>				
-				<div style="float:right;width:20%;"> 
-					<button
-					data-action="next"
-					data-target="1" data-value="Maduro" style="color:#900e9c; font-family: caviar_dreamsregular;font-size: 18px; background-color: #fff; border : 1px solid #fff"><b>Maduro</b></button>
-				</div>
-				<div style="float:right;width:20%;"> 
-					<button
-					data-action="next"
-					data-target="1" data-value="Adulto" 
-					style="color:#900e9c; font-family: caviar_dreamsregular;font-size: 18px; background-color: #fff; border : 1px solid #fff""><b>Adulto</b></button>
-				</div>  
-				<div style="float:right;width:20%;"> 
-					<button
-					data-action="next"
-					data-target="1" data-value="Cachorro" style="color:#900e9c; font-family: caviar_dreamsregular;font-size: 18px;background-color: #fff; border : 1px solid #fff""><b>Cachorro</b></button>
-				</div>				
+	<section>
+		<div class="hidden-xs">
+			<div style="float:left;width:35%;">    
+				<label 
+				style="margin-left: 35px;
+				font-weight: bold;
+				font-family: PoetsenOne_Regular; 
+				font-size:30px; 
+				color:#900e9c;">
+				<B>Selecciona la edad:</B>
+			</label>
+			</div>				
+			<div style="float:right;width:20%;"> 
+				<button
+				data-action="next"
+				data-target="1" data-value="Maduro" style="color:#900e9c; font-family: caviar_dreamsregular;font-size: 18px; background-color: #fff; border : 1px solid #fff"><b>Maduro</b></button>
 			</div>
+			<div style="float:right;width:20%;"> 
+				<button
+				data-action="next"
+				data-target="1" data-value="Adulto" 
+				style="color:#900e9c; font-family: caviar_dreamsregular;font-size: 18px; background-color: #fff; border : 1px solid #fff""><b>Adulto</b></button>
+			</div>  
+			<div style="float:right;width:20%;"> 
+				<button
+				data-action="next"
+				data-target="1" data-value="Cachorro" style="color:#900e9c; font-family: caviar_dreamsregular;font-size: 18px;background-color: #fff; border : 1px solid #fff""><b>Cachorro</b></button>
+			</div>				
+		</div>
 
-			<div class="visible-xs" style="width: 550px; margin-top: 700px">
-				<br> <br> <br> 
-								<div style="float:left;width:35%;">    
-					<label style="margin-left: 35px;font-weight: bold;font-family: PoetsenOne_Regular; font-size:17; color:#900e9c;"><B>Selecciona la edad:</B></label>
-
-					
-				</div>				
-				<div style="float:right;width:20%;"> 
-					<button
-					data-action="next"
-					data-target="1" data-value="Maduro" style="color:#900e9c; font-family: caviar_dreamsregular;font-size: 18px; background-color: #fff; border : 1px solid #fff"><b>Maduro</b></button>
-				</div>
-				<div style="float:right;width:20%;"> 
-					<button
-					data-action="next"
-					data-target="1" data-value="Adulto" 
-					style="color:#900e9c; font-family: caviar_dreamsregular;font-size: 18px; background-color: #fff; border : 1px solid #fff""><b>Adulto</b></button>
-				</div>  
-				<div style="float:right;width:20%;"> 
-					<button
-					data-action="next"
-					data-target="1" data-value="Cachorro" style="color:#900e9c; font-family: caviar_dreamsregular;font-size: 18px;background-color: #fff; border : 1px solid #fff""><b>Cachorro</b></button>
-				</div>				
+		<div class="visible-xs" style="width: 550px; margin-top: 700px"> 
+			<div style="float:left;width:35%;">    
+				<label style="margin-left: 35px;font-weight: bold;font-family: PoetsenOne_Regular; font-size:17; color:#900e9c;"><B>Selecciona la edad:</B></label>
 			</div>
-       
-						
+			<div style="float:right;width:20%;"> 
+				<button
+				data-action="next"
+				data-target="1" data-value="Maduro" style="color:#900e9c; font-family: caviar_dreamsregular;font-size: 18px; background-color: #fff; border : 1px solid #fff"><b>Maduro</b></button>
+			</div>
+			<div style="float:right;width:20%;"> 
+				<button
+				data-action="next"
+				data-target="1" data-value="Adulto" 
+				style="color:#900e9c; font-family: caviar_dreamsregular;font-size: 18px; background-color: #fff; border : 1px solid #fff""><b>Adulto</b></button>
+			</div>  
+			<div style="float:right;width:20%;"> 
+				<button
+				data-action="next"
+				data-target="1" data-value="Cachorro" style="color:#900e9c; font-family: caviar_dreamsregular;font-size: 18px;background-color: #fff; border : 1px solid #fff""><b>Cachorro</b></button>
+			</div>				
+		</div>				
 	</section>
 	
 	<!-- Fase #2 Producto -->
-	<section 
-		data-fase="2"
-		 
-		class ="hidden"
-		>		
-
-			<section id="carrousel1" class="hidden-xs">
-			</section>
-
-			<section id="carrousel-mobile" class="hidden-md hidden-sm hidden-lg col-xs-12">
-			</section>
+	<section data-fase="2" class ="hidden">		
+		<section id="carrousel1" class="hidden-xs"></section>
+			<section id="carrousel-mobile" class="hidden-md hidden-sm hidden-lg col-xs-12"></section>
 
 			<div class="hidden-xs">
 				<label style="font-size: 20px; margin-left: 10%">Selección</label>
@@ -137,11 +130,9 @@ get_template_part( 'template/parts/header/suscription', 'page' );
 				<div>
 					<label style="margin-left: 80%">Si no aparece tu marca haz <a href="">click aqui</a></label>
 				</div>
-
 			</div>
 
-			<section class="visible-xs">
-			</section>
+			<section class="visible-xs"></section>
 
 			<div class="visible-xs" style="width: 550px; margin-top: 600px">
 				<br> 
@@ -163,16 +154,12 @@ get_template_part( 'template/parts/header/suscription', 'page' );
 					style="color:#900e9c; font-family: PoetsenOne_Regular;font-size: 18px; background-color: #fff; border : 1px solid #fff"><b>M</b> (2000g) |</button>
 				</div>  
 				<div style="float:right;width:20%;"> 
-					<button
-					data-action="next"
-					data-target="2" data-value="NUPEC" style="color:#900e9c; font-family: PoetsenOne_Regular;font-size: 18px;background-color: #fff; border : 1px solid #fff""><b>P</b> (900g) |</button>
+					<button data-action="next" data-target="2" data-value="NUPEC" style="color:#900e9c; font-family: PoetsenOne_Regular;font-size: 18px;background-color: #fff; border : 1px solid #fff"><b>P</b> (900g) </button>
 				</div>		
 				<div>
 					<label>Si no aparece tu marca haz <a href="">click aqui</a></label>
 				</div>
-			</div>
-
-				
+			</div>		
 	</section>
 
 	<!-- Fase #3 Plan -->

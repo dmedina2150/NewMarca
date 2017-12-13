@@ -1,5 +1,5 @@
 *{
-	//*ont-family: caviar_dreamsregular;*/
+	/*ont-family: caviar_dreamsregular;*/
 	
 }
 
@@ -47,6 +47,10 @@ h3 .img-center,
 h4 .img-center,
 p .img-center{
 	vertical-align: middle;
+}
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 .profile-content-input{
@@ -1125,7 +1129,7 @@ position: absolute;
 	}
 	#header-purchase{
 	    height: 12vh;
-	    width: 600px;
+	    width: 100%;
 	}
 	#content-extra {
     	height: auto;
@@ -1396,9 +1400,9 @@ position: absolute;
 
 
 
-.row{	
+/*.row{	
 	margin-bottom:10px;
-}
+}*/
 
 .row1{	
 	width: 100%;
