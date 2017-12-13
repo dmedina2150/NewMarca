@@ -626,7 +626,7 @@ function loadFase(fase_id){
 			;			
 			// Ocultar Obj. Actual
 			$(faseNext)
-				.addClass('hidden');
+				.addClass('hidden');   
 
 			// Cargar Titulo
 			loadAttr( fase_section );
