@@ -326,6 +326,18 @@ position: absolute;
     padding: 10px 60px 10px 60px;;;
 	margin-top: 20px;
 }	
+.btn-sm-marca{
+	background: #ffffff;
+	border : 1px solid #fff;
+	color:#fff;
+	font-size: 20px;
+	font-weight: bold;
+    padding: 10px 60px 10px 60px;;;
+	margin-top: 20px;
+}	
+.caviar{
+	font-family: caviar_dreamsregular;
+}
 	
 .btn-kmibox-white:hover{
 	background: #fff;
@@ -701,7 +713,9 @@ position: absolute;
     /*display: inline-block;*/
    
 }
-
+.responsive-marca{
+	color: #94d400;
+}
 .border-curvo .row label{
 	font-size: 18px;
 	color: #7ad2c4 ;
@@ -897,7 +911,7 @@ position: absolute;
 
 .selected
 {
-    opacity: 0.2;
+    opacity:;
 }
 
 #f4-slider-prev i{
@@ -1099,7 +1113,7 @@ position: absolute;
 	}
 	#header {
 	    padding-bottom: 40px;
-	    margin-left: 20px;
+
 	    text-align: right;
 	    color: #ffffff;
 	    font-size: 18px;

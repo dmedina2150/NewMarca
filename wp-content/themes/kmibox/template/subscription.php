@@ -248,7 +248,7 @@ get_template_part( 'template/parts/header/suscription', 'page' );
 		data-subtitle=""
 		data-msg-color="transparent"
 		data-msg ="">
-		<article class="col-md-12">
+		<article class="col-md-12 col-xs-12">
 
 
 			<div class="row">
@@ -258,32 +258,32 @@ get_template_part( 'template/parts/header/suscription', 'page' );
 			</div>
 				
 			<header class="row">
-				<article class="col-md-2">Producto</article>
-				<article class="col-md-4 hidden-xs ">Descripci&oacute;n</article>
-				<article class="col-md-2 hidden-xs ">Frecuencia</article>
+				<article class="col-md-2 col-xs-2">Producto</article>
+				<article class="col-md-4 col-xs-4 ">Descripci&oacute;n</article>
+				<article class="col-md-2 col-xs-2 ">Frecuencia</article>
 				<!--article class="col-md-2 hidden-xs ">Cantidad</article-->
-				<article class="col-md-2 hidden-xs ">Total</article>
+				<article class="col-md-2 col-xs-2 ">Total</article>
 			</header>
 			<section id="cart-items" class="row"></section>
 			<aside id="totales" class="row">
-				<div class="col-xs-12 col-md-6 pull-right">
+				<div class="col-xs-6 col-md-6 pull-right">
 					<article class="row">
-						<label class="col-xs-12 col-sm-8 text-right">Productos en esta compra:</label>
-						<label class="col-xs-12 col-sm-4 bg-light currency" id="cant-item"></label>
+						<label class="col-xs-8 col-sm-8 text-right">Productos en esta compra:</label>
+						<label class="col-xs-4 col-sm-4 bg-light currency" id="cant-item"></label>
 					</article>
 					<article  class="row">
-						<label class="col-xs-12 col-sm-8 text-right">Total sin IVA:</label>
-						<label class="col-xs-12 col-sm-4 bg-light currency" maxlength="6" id="subtotal"></label>
+						<label class="col-xs-8 col-sm-8 text-right">Total sin IVA:</label>
+						<label class="col-xs-4 col-sm-4 bg-light currency" maxlength="6" id="subtotal"></label>
 					</article>
 					<article class="row">
-						<label class="col-xs-12 col-sm-8 text-right">IVA:</label>
-						<label class="col-xs-12 col-sm-4 bg-light currency" maxlength="6" id="iva"></label>
+						<label class="col-xs-8 col-sm-8 text-right">IVA:</label>
+						<label class="col-xs-4 col-sm-4 bg-light currency" maxlength="6" id="iva"></label>
 					</article>
 					<div class="row  text-center">
-						<article class="col-xs-12 col-sm-4 col-sm-offset-8 pull-right">
+						<article class="col-xs-4 col-sm-4 col-sm-offset-8 pull-right">
 							<label>Total:</label>
 						</article>
-						<article class="col-xs-12 col-sm-4 bg-total col-sm-offset-8 pull-right">
+						<article class="col-xs-4 col-sm-4 bg-total col-sm-offset-8 pull-right">
 							<label id="total" maxlength="6" class="currency"></label>
 						</article>
 					</div>
@@ -310,7 +310,7 @@ get_template_part( 'template/parts/header/suscription', 'page' );
 			    <div class="Modal content" id="suscription" >			     
 			      
 
-			      <div  class="btn btn-sm-kmibox"  style="border-color:#fffff1; border-style: solid; border-width: 14px;">
+			      <div  class="btn btn-sm-marca"  style="border-color:#fffff1; border-style: solid; border-width: 14px;">
 
 			      	<button type="button" class="close" data-dismiss="modal" aria-hidden="true" id="btn_cerrar">X</button>
 
@@ -320,12 +320,12 @@ get_template_part( 'template/parts/header/suscription', 'page' );
 					    <div style="float:left;width:50%;">    
 					       <img src='<?php echo get_home_url(); ?>/img/tarjeta.png'  alt="Cinque Terre" class="img-responsive" width="250" height="240"/>
 
-				      		<a href="<?php echo get_home_url(); ?>/pagar-mi-kmibox"  id="pagar" role="button"  data-target="suscription"><img src='<?php echo get_home_url(); ?>/img/btn_tarjeta.png' class="img-responsive" alt="Cinque Terre" width="220" height="80"/></a>
+				      		<a href="<?php echo get_home_url(); ?>/pagar-mi-kmibox"  id="pagar" role="button"  data-target="suscription"><label class="caviar">Pago con tarjeta</label></a>
 						</div>
 						<div style="float:left;width:50%;" >    
 							<img src='<?php echo get_home_url(); ?>/img/efectivo.png'  alt="Cinque Terre" class="img-responsive" width="250" height="250"/>
 
-							<a href="#" type="button" id="tienda" data-target="suscription"><img src='<?php echo get_home_url(); ?>/img/btn_efectivo.png'   alt="Cinque Terre"  width="220" height="60"/></a>
+							<a href="#" type="button" id="tienda" data-target="suscription"><label class="caviar" >Pago en efectivo</label></a>
 
 							<!--button type="button" id="tienda" class="btn btn-sm-kmibox btn-extend"><img src='<?php echo get_home_url(); ?>/img/btn_efectivo.png'   alt="Cinque Terre"  width="220" height="70"/></button-->
 

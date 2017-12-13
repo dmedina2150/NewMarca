@@ -16,10 +16,11 @@ if ( is_user_logged_in() ){
 	<div class="row" class="profile-content">
 		<!-- Nav tabs -->
 		<ul class="nav nav-tabs" role="tablist">
-			<li role="presentation" class="col-sm-3 col-xs-12 col-md-3 tab-especial"><a href="#mi_senvios" aria-controls="mi_senvios" role="tab" data-toggle="tab">Mis Envios</a></li>
-			<li role="presentation" class="col-sm-3 col-xs-12 col-md-3 tab-especial active"><a href="#mi_suscripcion" aria-controls="mi_suscripcion" role="tab" data-toggle="tab">Mi suscripción</a></li>
-			<li role="presentation" class="col-sm-3 col-xs-12 col-md-3 tab-especial"><a href="#donde" aria-controls="donde" role="tab" data-toggle="tab">¿Dónde está mi Marca?</a></li>
-			<li role="presentation" class="col-sm-3 col-xs-12 col-md-3 tab-especial"><a href="#info" aria-controls="info" role="tab" data-toggle="tab">Mi Información</a></li>
+			<li role="presentation" class="col-sm-3 col-xs-6 col-md-3 tab-especial"><a href="#mi_senvios" aria-controls="mi_senvios" role="tab" data-toggle="tab">Mis Envios</a></li>
+			<li role="presentation" class="col-sm-3 col-xs-6 col-md-3 tab-especial active"><a href="#mi_suscripcion" aria-controls="mi_suscripcion" role="tab" data-toggle="tab">Mi suscripción</a></li>
+			<br>
+			<li role="presentation" class="col-sm-3 col-xs-6 col-md-3 tab-especial"><a href="#donde" aria-controls="donde" role="tab" data-toggle="tab">¿Dónde está mi Marca?</a></li>
+			<li role="presentation" class="col-sm-3 col-xs-6 col-md-3 tab-especial"><a href="#info" aria-controls="info" role="tab" data-toggle="tab">Mi Información</a></li>
 		</ul>
 
 		<!-- Tab panes -->
