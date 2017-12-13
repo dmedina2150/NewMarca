@@ -24,7 +24,7 @@ function loadFase(fase_id){
 					$('#btn-linkprev').removeClass('hidden');
 					$('[data-action="prev"]').addClass('hidden');//header
 					$('#header').text('Elije el tamaño de tu mascota');
-
+					$('#header1').text('Elije el tamaño de tu mascota');
 					
 				
 				break;
@@ -35,19 +35,27 @@ function loadFase(fase_id){
 					$('#btn-linkprev').removeClass('hidden');
 					$('[data-action="prev"]').removeClass('hidden');
 					$('#header').text('Escoge la marca de tu preferencia');
+					$('#header1').text('Escoge la marca de tu preferencia');
 					// Cargar Items
 					//$('[data-fase="2"]').empty();
-					
+
+					$('#carrousel1').empty();					
+					$('#carrousel-mobile').empty();					
 
 					// Cargar Items
 					var producto = service[ kmibox_param['fase1'] ];					
 					var product_id=0;
 
 					
-					$.each(service[kmibox_param['fase1']], function(key, val){
+					// Crear item del producto
+					var pro = service[kmibox_param['fase1']];
+					$.each(pro, function(key, val){
 
-						// Crear item del producto
-						$('[data-fase="2"]')
+						/* ************************** *
+						 * Desktop 
+						 * ************************** */
+						$('#carrousel1')
+						.addClass("hidden-xs")
 						.attr({
 							'color': color_default,
 						})
@@ -55,14 +63,34 @@ function loadFase(fase_id){
 							$('<span></span>')
 							.append( 
 								$('<img>')
-									.attr({'src' : val['gallery']['thumnbnail'],
-										   'width': '270px',
-										   })),
-								$('#name').text('s')
+								.attr({'src' : val['gallery']['thumnbnail'],
+									   'width': '270px',
+								})
+							),
+						);
+
+
+						/* ************************** */
+						// Mobile 
+						/* ************************** */
+						$('#carrousel-mobile')
+						.addClass("hidden-sm hidden-md hidden-lg")
+						.attr({
+							'color': color_default,
+						})
+						.append(
+							$('<div class="col-xs-6"></div>')
+							.append(
+								$('<img>')
+								.attr({'src' : val['gallery']['thumnbnail'],
+									   'width': '270px',
+								})
+							),
+						);
 								
-							)
-								
-						});
+					});
+
+
 									
 						$("#carrousel1").waterwheelCarousel({
 				            flankingItems: 3,
@@ -89,6 +117,7 @@ function loadFase(fase_id){
 				// ***************************************
 				case 3:
 				$('#header').text('Selecciona el tiempo de suscripción');
+				$('#header1').text('Selecciona el tiempo de suscripción');
 					// Omitir paso
 					// Cargar Items
 					var plan = service[ kmibox_param['fase1'] ][ kmibox_param['fase2'] ]['plan'];
@@ -117,7 +146,7 @@ function loadFase(fase_id){
 							$('[data-fase="3"]')
 								.addClass('text-center')
 								.append(
-									$('<article class="text-center col-sm-4 separation-top"></article>')
+									$('<article class="text-center col-sm-4 separation-top hidden-xs"></article>')
 									.append( 
 									$('<img/>')
 									.addClass('img-responsive')
@@ -139,6 +168,35 @@ function loadFase(fase_id){
 											
 									)
 								);
+
+								$('[data-fase="3"]')
+								.addClass('text-center')
+								.append(
+									$('<article class="text-center col-sm-4 separation-top hidden-md hidden-lg"></article>')
+									.append( 
+									$('<img/>')
+									.addClass('img-responsive')
+									.attr({
+										'src': icons[key],
+										'width': '300px',
+										'height' : '370px',
+									}),
+										$('<button>'+ucfirst(key)+'</button>')
+											.addClass('btn btn-sm-kmibox btn-sm-kmibox-price')
+											.css('background', color)
+											.attr({
+												'data-action': 'next',
+												'data-value': key,
+												'data-target': '3',
+												'data-object': val['ID'],
+												'data-color': color_default,
+											})
+											
+									)
+								);
+
+
+
 							offset = '';
 						}
 					});
@@ -179,6 +237,7 @@ function loadFase(fase_id){
 				case 4:
 					$('#btn-omitir').addClass('hidden');
 					$('#header').text('Verifica tu compra');
+					$('#header1').text('Verifica tu compra');
 
 					var xdata = {'key':'get_cart'}
 					$.post( urlbase+"/ajax/admin_cart.php", {xdata}, function(result) {
@@ -628,6 +687,7 @@ function loadFase(fase_id){
 
 $(document).ready(function() {
 		carrousel();
+		carrouselResponsive();	
 });
 
 function carrousel(){
@@ -636,6 +696,7 @@ function carrousel(){
 		    separation: 300,
 		    edgeFadeEnabled: true,     	 
 		  	flankingItems: 3,
+		  	orientation: 'horizontal' ,
 
 		  movingToCenter: function ($item) {
 		    $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
@@ -656,7 +717,32 @@ function carrousel(){
     });
 		}
 
+function carrouselResponsive(){
+    $('#carrouselResp').waterwheelCarousel({
+		    
+		    separation: 200,
+		    edgeFadeEnabled: true,     	 
+		  	flankingItems: 3,
+		  	orientation: 'vertical' ,
 
+		  movingToCenter: function ($item) {
+		    $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
+		  },
+		  movedToCenter: function ($item) {
+		    $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
+		  },
+		  movingFromCenter: function ($item) {
+		    $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
+		  },
+		  movedFromCenter: function ($item) {
+		    $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
+		  },
+		  clickedCenter: function ($item) {
+		    $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
+		  }
+      
+    });
+		}
 
 
 

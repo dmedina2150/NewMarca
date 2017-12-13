@@ -2,7 +2,7 @@
 <aside class="col-md-6 col-xs-12 hidden col-md-offset-4 alert alert-danger" id="login-mensaje"></aside>
 <article id="inicio-sesion" 
 		class="col-md-6 col-xs-12 col-md-offset-4" 
-		style=" background-color: #94d400">
+		style=" background-color: #94d400;  height: 500px;">
 
 	
 		<div class="col-md-10 col-md-offset-1 form-horizontal">
